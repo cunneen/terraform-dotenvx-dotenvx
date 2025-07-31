@@ -7,8 +7,8 @@
     "url": "https://github.com/cunneen/terraform-dotenvx-dotenvx.git"
   },
   "scripts": {
-    "release-temp": "release-it -i",
-    "prepare-temp": "husky",
+    "release": "release-it -i",
+    "prepare": "husky",
     "docs": "terraform-docs markdown table --output-file README.md ."
   },
   "release-it": {
