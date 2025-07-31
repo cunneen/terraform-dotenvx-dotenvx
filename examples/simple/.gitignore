@@ -1,0 +1,7 @@
+# gitignore overrides for example purposes
+
+# INCLUDE the example `.env` file 
+!.env.example
+
+# INCLUDE the example `.env.keys.example` file  (this would normally be excluded)
+!.env.keys.example
