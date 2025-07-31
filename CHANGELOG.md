@@ -1,5 +1,7 @@
 # Changelog
 
+* Update LICENSE (6fc6c86)
+
 ## 1.0.0 (2025-07-31)
 
 * fix: :hammer: package.json : fix script names ([30b58e5](https://github.com/cunneen/terraform-dotenvx-dotenvx/commit/30b58e5))
