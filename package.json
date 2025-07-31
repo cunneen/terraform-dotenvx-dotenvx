@@ -1,0 +1,55 @@
+{
+  "version": "0.0.1",
+  "name": "terraform-dotenvx-dotenvx",
+  "description": "Terraform module which reads encrypted properties from a dotenvx `.env` file, and makes the decrypted values available for use in other terraform resources at the `terraform plan` stage.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cunneen/terraform-dotenvx-dotenvx.git"
+  },
+  "scripts": {
+    "release-temp": "release-it -i",
+    "prepare-temp": "husky",
+    "docs": "terraform-docs markdown table --output-file README.md ."
+  },
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "git": {
+      "commitMessage": "chore: release ${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "type": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "docs",
+              "section": "Documentation"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@release-it/conventional-changelog": "^10.0.1",
+    "husky": "^9.1.7",
+    "release-it": "^19.0.4"
+  }
+}
