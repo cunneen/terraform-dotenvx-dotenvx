@@ -1,5 +1,7 @@
 # Changelog
 
+* docs: :memo: exampes/vercel : README : fix module source (3571799)
+
 * Update LICENSE (6fc6c86)
 
 ## 1.0.0 (2025-07-31)

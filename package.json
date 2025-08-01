@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "terraform-dotenvx-dotenvx",
   "description": "Terraform module which reads encrypted properties from a dotenvx `.env` file, and makes the decrypted values available for use in other terraform resources at the `terraform plan` stage.",
   "repository": {
