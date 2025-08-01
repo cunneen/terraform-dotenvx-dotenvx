@@ -72,7 +72,7 @@ This example builds on the [simple][simple] example to create a vercel deploymen
     # load .env.* for each specified environment
     module "dotenvx_env" {
       for_each       = toset(local.envs)
-      source         = "../../.."
+      source         = "cunneen/dotenvx/dotenvx"
       env_filepath   = ".env.${each.value}"
       env_folderpath = ".."
       should_ignore_missing_env_file = false
